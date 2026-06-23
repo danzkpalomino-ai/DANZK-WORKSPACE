@@ -8,6 +8,7 @@ const Products = () => {
       name: 'Polera Oversize "Noir"',
       category: 'Poleras',
       price: '$45.000',
+      image: '/polera1.jpeg',
       colors: [
         { name: 'Negro', hex: '#0a0a0a' },
         { name: 'Naranja Óxido', hex: '#ff5500' },
@@ -20,6 +21,7 @@ const Products = () => {
       name: 'Pantalón Polar Largo',
       category: 'Pantalones',
       price: '$55.000',
+      image: '/polera2.jpeg',
       colors: [
         { name: 'Negro', hex: '#0a0a0a' },
         { name: 'Plomo Humo', hex: '#555555' }
@@ -30,8 +32,20 @@ const Products = () => {
       name: 'Polera Heavyweight "Óxido"',
       category: 'Poleras',
       price: '$48.000',
+      image: '/polera3.jpeg',
       colors: [
         { name: 'Naranja Óxido', hex: '#ff5500' },
+        { name: 'Negro', hex: '#0a0a0a' }
+      ]
+    },
+    {
+      id: 4,
+      name: 'Polera Streetwear "Smoke"',
+      category: 'Poleras',
+      price: '$46.000',
+      image: '/polera4.jpeg',
+      colors: [
+        { name: 'Plomo Humo', hex: '#555555' },
         { name: 'Negro', hex: '#0a0a0a' }
       ]
     }
@@ -63,7 +77,7 @@ const Products = () => {
         {products.map((product) => (
           <div key={product.id} className="product-card" onClick={() => openModal(product)}>
             <div className="product-image-placeholder">
-              <div className="image-mock">IMG</div>
+              <img src={product.image} alt={product.name} className="product-img" />
             </div>
             <div className="product-info">
               <span className="product-category">{product.category}</span>

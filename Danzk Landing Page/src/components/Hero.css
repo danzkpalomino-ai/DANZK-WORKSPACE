@@ -20,7 +20,9 @@
      background-size: cover;
      background-position: center;
   */
-  background: linear-gradient(45deg, #151515, #050505);
+  background-image: url('/hero.png');
+  background-size: cover;
+  background-position: center top;
   z-index: 1;
 }
 

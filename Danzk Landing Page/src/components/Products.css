@@ -51,11 +51,16 @@
   overflow: hidden;
 }
 
-.image-mock {
-  color: #222;
-  font-family: var(--font-hero);
-  font-size: 4rem;
-  font-weight: 900;
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
 }
 
 .product-info {
