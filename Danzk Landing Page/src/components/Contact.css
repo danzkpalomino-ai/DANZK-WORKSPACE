@@ -1,0 +1,153 @@
+.contact {
+  background-color: rgba(15, 15, 15, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-desc {
+  color: var(--color-text-dim);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.detail-icon {
+  font-size: 1.5rem;
+  background-color: var(--color-charcoal);
+  padding: 0.5rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-item h4 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.detail-item p {
+  font-size: 0.85rem;
+  color: var(--color-text-dim);
+}
+
+.whatsapp-btn {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.whatsapp-btn:hover {
+  background-color: #128c7e;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+}
+
+.contact-form-container {
+  background-color: var(--color-charcoal);
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-text-dim);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background-color: var(--color-black);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.85rem 1rem;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-orange);
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.form-success {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.form-success h3 {
+  font-size: 1.8rem;
+  color: var(--color-orange);
+}
+
+.form-success p {
+  color: var(--color-text-dim);
+  line-height: 1.7;
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .contact-form-container {
+    padding: 2rem;
+  }
+}

@@ -48,4 +48,56 @@
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   color: rgba(255, 255, 255, 0.2);
   font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
+
+.developer-branding {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.dev-logo-placeholder {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--color-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  box-shadow: 0 0 10px var(--color-orange-dim);
+}
+
+.dev-logo-symbol {
+  color: var(--color-black);
+  line-height: 1;
+}
+
+.dev-credit-text {
+  font-size: 0.85rem;
+  color: var(--color-text-dim);
+}
+
+.highlight-tech {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-links {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
