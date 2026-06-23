@@ -1,0 +1,81 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* INSTRUCCIÓN PARA EL USUARIO: 
+     Reemplaza el gradiente de abajo con tu imagen de fondo así:
+     background-image: url('../assets/tu-imagen-fondo.jpg');
+     background-size: cover;
+     background-position: center;
+  */
+  background: linear-gradient(45deg, #151515, #050505);
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 5, 5, 0.4); /* Oscurece un poco la imagen para que el texto resalte */
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.hero-title {
+  font-size: clamp(4rem, 15vw, 12rem);
+  line-height: 0.85;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-outline {
+  /* Títulos transparentes sobrepuestos */
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.8);
+  margin-left: -5vw;
+}
+
+.text-solid {
+  color: var(--color-orange);
+  margin-right: -5vw;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.hero-btn {
+  margin-top: 2rem;
+}
