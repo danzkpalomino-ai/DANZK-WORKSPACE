@@ -11,7 +11,7 @@ const Hero = () => {
       
       <div className="hero-content">
         <h1 className="hero-title">
-          <span className="text-outline">DARK</span><br/>
+          <span className="text-outline">CHENRY</span><br/>
           <span className="text-solid">URBAN</span>
         </h1>
         <p className="hero-subtitle">Prendas exclusivas con diseño.</p>

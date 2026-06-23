@@ -6,8 +6,8 @@ const Footer = () => {
     <footer className="footer">
       <div className="container footer-content">
         <div className="footer-brand">
-          <h2 className="footer-logo">DANZK</h2>
-          <p className="footer-slogan">Dark Urban Streetwear.</p>
+          <h2 className="footer-logo">chenry Urban</h2>
+          <p className="footer-slogan">Confecciones y Diseños Palomino</p>
         </div>
         
         <div className="footer-links">
@@ -17,7 +17,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Danzk. Todos los derechos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} chenry Urban. Todos los derechos reservados.</p>
+        <p className="developer-tag" style={{ marginTop: '0.5rem', fontSize: '0.85rem', color: 'var(--color-text-dim)' }}>
+          Desarrollado por <span style={{ color: 'var(--color-orange)' }}>Danzk ST Solution Tech</span>
+        </p>
       </div>
     </footer>
   );
